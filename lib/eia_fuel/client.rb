@@ -15,7 +15,7 @@ module EiaFuel
       end
       parse_response(res)
       rescue => e
-        puts 'An error ocurred while fetching data'
+        puts "An error ocurred while fetching data: #{e}"
     end
 
     private

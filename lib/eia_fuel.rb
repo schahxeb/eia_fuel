@@ -9,7 +9,7 @@ require_relative './eia_fuel/client'
 require_relative './eia_fuel/series'
 
 module EiaFuel
-  @base_url = 'http://api.eia.gov'
+  @base_url = 'https://api.eia.gov'
   @api_key = nil
 
   class << self

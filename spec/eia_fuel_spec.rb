@@ -1,11 +1,11 @@
 RSpec.describe EiaFuel do
   describe ".base_url" do
     after :each do
-      EiaFuel.base_url = 'http://api.eia.gov'
+      EiaFuel.base_url = 'https://api.eia.gov'
     end
 
-    it "should return 'http://api.eia.gov'" do
-      expect(EiaFuel.base_url).to eq('http://api.eia.gov')
+    it "should return 'https://api.eia.gov'" do
+      expect(EiaFuel.base_url).to eq('https://api.eia.gov')
     end
 
     it "allows setting the base_url to a new value" do

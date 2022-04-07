@@ -8,7 +8,7 @@ module EiaFuel
     end
 
     def get(series_id)
-      conn = Faraday.new(url: 'http://api.eia.gov/series/')
+      conn = Faraday.new(url: "#{EiaFuel.base_url}/series/")
       res = conn.get do |f|
         f.params[:api_key]   = EiaFuel.api_key
         f.params[:series_id] = series_id

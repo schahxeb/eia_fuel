@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    eia_fuel (0.1.6)
+    eia_fuel (0.1.7)
       faraday (~> 0.12)
 
 GEM

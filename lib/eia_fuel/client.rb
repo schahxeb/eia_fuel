@@ -21,8 +21,8 @@ module EiaFuel
 
     def parse_response(response)
       res = JSON.parse(response.body)
-      if res.dig('response', 0)
-        EiaFuel::Series.new(res.dig('response', 0))
+      if res['response']
+        EiaFuel::Series.new(res['response'])
       else
         JSON.parse(response.body)
       end

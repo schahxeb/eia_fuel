@@ -8,10 +8,9 @@ module EiaFuel
     end
 
     def get(series_id)
-      conn = Faraday.new(url: "#{EiaFuel.base_url}/seriesid/")
+      conn = Faraday.new(url: "#{EiaFuel.base_url}/seriesid/#{series_id}")
       res = conn.get do |f|
         f.params[:api_key]   = EiaFuel.api_key
-        f.params[:series_id] = series_id
       end
       parse_response(res)
       rescue => e

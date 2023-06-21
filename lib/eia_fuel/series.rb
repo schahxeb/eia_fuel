@@ -24,7 +24,7 @@ module EiaFuel
 
     def generate_data(data_array)
       data_array.map do |dict|
-        Tuple.new(Date.strptime(dict["period"], "%Y%m%d"), dict["value"])
+        Tuple.new(Date.strptime(dict["period"], "%Y-%m-%d"), dict["value"])
       end
     end
   end

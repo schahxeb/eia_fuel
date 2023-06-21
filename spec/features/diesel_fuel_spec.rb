@@ -17,7 +17,7 @@ RSpec.describe "Fetching list of diesel series" do
         PET.EMD_EPD2D_PTE_R50_DPG.W
       ).sample(num).map do |series_id|
         d = @client.get(series_id)
-        [d.name, d.latest_price]
+        [d.description, d.latest_price]
       end
 
       expect(arr.length).to eq(num)

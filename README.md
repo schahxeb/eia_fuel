@@ -38,8 +38,8 @@ series = client.get('PET.EMD_EPD2D_PTE_NUS_DPG.W')
 #=> #<EiaFuel::Series:0x00007f7f4e10b380 ... >
 
 # the series contains the information you want
-series.name
-#=> "U.S. No 2 Diesel Retail Prices, Weekly"
+series.description
+#=> "EIA petroleum gas survey data"
 series.data
 #=> [#<struct EiaFuel::Tuple date=#<Date: 2018-07-02 ((2458302j,0s,0n),+0s,2299161j)>, price=3.236>,
  #<struct EiaFuel::Tuple date=#<Date: 2018-06-25 ((2458295j,0s,0n),+0s,2299161j)>, price=3.216>,
